@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content"
+import Link from "@/components/ui/Link.astro"
 
 export async function getStaticPaths() {
   const componentDocs = await getCollection("components")
@@ -14,4 +15,4 @@ const { doc } = Astro.props
 const { Content } = await doc.render()
 ---
 
-<Content />
+<Content components={{ a: Link }} />
