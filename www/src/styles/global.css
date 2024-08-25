@@ -113,7 +113,7 @@
     @apply bg-background text-foreground;
   }
   code {
-    @apply font-mono p-0.5 text-xs bg-code text-code-foreground rounded break-all md:break-normal;
+    @apply font-mono p-0.5 text-xs bg-code text-code-foreground rounded break-all md:break-normal before:hidden after:hidden;
   }
 }
 
