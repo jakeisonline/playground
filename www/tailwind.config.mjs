@@ -77,6 +77,20 @@ export default {
       fontFamily: {
         sans: ["Urbanist", ...defaultTheme.fontFamily.sans],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            code: {
+              fontWeight: "normal",
+              color: "hsl(var(--code-foreground))",
+              fontSize: "0.8rem",
+            },
+            kbd: {
+              fontSize: "0.9rem",
+            },
+          },
+        },
+      },
     },
   },
   plugins: [
