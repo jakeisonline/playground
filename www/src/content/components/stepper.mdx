@@ -1,0 +1,41 @@
+---
+title: "Stepper"
+slug: "stepper"
+layout: "../../layouts/ComponentsLayout.astro"
+---
+
+# Stepper
+
+The Stepper component is a user interface element that allows users to increment or decrement a value. It is commonly used for inputting numerical values, such as quantities or prices.
+
+## Usage
+
+```javascript
+import {
+  StepperField,
+  StepperFieldButton,
+  StepperFieldInput,
+  StepperFieldLabel,
+} from "@/components/stepper-field"
+```
+
+```javascript
+<StepperField start={0}>
+  <StepperFieldLabel htmlFor="stepper">Quantity</StepperFieldLabel>
+  <StepperFieldButton direction="down">-</StepperFieldButton>
+  <StepperFieldInput id="stepper" />
+  <StepperFieldButton direction="up">+</StepperFieldButton>
+</StepperField>
+```
+
+## Accessibility
+
+Adheres to the [Spinbutton WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/spinbutton/). At its core, this component is simply a [native number field](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number).
+
+`<StepperFieldInput>` requires the property `id` (string) to be set, and should match the `htmlFor` (string) of the `<StepperFieldLabel>`.
+
+## Examples
+
+### Allow shift stepping
+
+Shift stepping allowing users to increment or decrement a value by a larger amount. When `shift` is set, users can shift step by holding <kbd>Shift</kbd> while clicking a `<StepperFieldButton>`, or by using the keyboard interactions.
