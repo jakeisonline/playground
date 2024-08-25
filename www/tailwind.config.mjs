@@ -85,6 +85,9 @@ export default {
               color: "hsl(var(--code-foreground))",
               fontSize: "0.8rem",
             },
+            pre: {
+              fontSize: "0.8rem",
+            },
             kbd: {
               fontSize: "0.9rem",
             },
