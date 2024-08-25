@@ -8,11 +8,16 @@ import mdx from "@astrojs/mdx"
 // https://astro.build/config
 export default defineConfig({
   integrations: [
+    mdx({
+      syntaxHighlight: "shiki",
+      shikiConfig: {
+        theme: "poimandres",
+      },
+    }),
     react(),
     tailwind({
       applyBaseStyles: false,
     }),
-    mdx(),
   ],
   output: "static",
   adapter: vercel({
