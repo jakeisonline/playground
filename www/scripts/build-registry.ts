@@ -7,7 +7,7 @@ import { registryItemFileSchema } from "@/registry/schema"
 import path from "path"
 
 const REGISTRY_BASE_PATH = "registry"
-const PUBLIC_FOLDER_BASE_PATH = "www/public/registry"
+const PUBLIC_FOLDER_BASE_PATH = "public/registry"
 const COMPONENT_FOLDER_PATH = "components"
 
 type File = z.infer<typeof registryItemFileSchema>
