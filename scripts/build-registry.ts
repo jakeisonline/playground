@@ -1,3 +1,5 @@
+// Heavily inspired by and with great thanks to @bwestwood11 (https://github.com/bwestwood11/ui-cart/blob/main/scripts/build-registry.ts)
+
 import { registry } from "../registry"
 import { promises as fs } from "fs"
 import { z } from "zod"
