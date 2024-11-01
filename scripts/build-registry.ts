@@ -32,7 +32,7 @@ async function writeFileRecursive(filePath: string, data: string) {
 const getUIFiles = async (files: File[]) => {
   const filesArrayPromises = (files ?? []).map(async (file) => {
     if (typeof file === "string") {
-      const filePath = `${REGISTRY_BASE_PATH}/ui/${file}`
+      const filePath = `${REGISTRY_BASE_PATH}/${file}`
       const fileContent = await fs.readFile(filePath, "utf-8")
       return {
         type: FolderToComponentTypeMap[
