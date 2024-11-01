@@ -6,6 +6,12 @@ export const ui: Registry = [
     type: "registry:ui",
     description: "A stepper component",
     files: ["ui/stepper.tsx"],
+    dependencies: ["tailwindcss-inner-border"],
+    tailwind: {
+      config: {
+        plugins: [`require("tailwindcss-inner-border")`],
+      },
+    },
   },
   {
     name: "range",
