@@ -7,4 +7,10 @@ export const ui: Registry = [
     description: "A stepper component",
     files: ["ui/stepper.tsx"],
   },
+  {
+    name: "range",
+    type: "registry:ui",
+    description: "A range component",
+    files: ["ui/range.tsx"],
+  },
 ]
