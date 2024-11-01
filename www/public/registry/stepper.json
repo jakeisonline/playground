@@ -9,8 +9,5 @@
       "path": "ui/stepper.tsx",
       "target": "components/ui/stepper.tsx"
     }
-  ],
-  "registryDependencies": [
-    "utils"
   ]
 }

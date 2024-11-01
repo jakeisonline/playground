@@ -9,8 +9,5 @@
       "path": "ui/range.tsx",
       "target": "components/ui/range.tsx"
     }
-  ],
-  "registryDependencies": [
-    "utils"
   ]
 }
