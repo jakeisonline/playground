@@ -6,7 +6,7 @@ export default {
     relative: true,
     files: [
       "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
-      "../registry/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+      "./registry/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
     ],
   },
   darkMode: ["class"],
