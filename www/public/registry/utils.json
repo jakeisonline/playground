@@ -1,0 +1,11 @@
+{
+  "name": "utils",
+  "type": "registry:lib",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "files": [
+    null
+  ]
+}
