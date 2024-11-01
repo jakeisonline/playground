@@ -15,7 +15,7 @@ const FolderToComponentTypeMap = {
   ui: "registry:ui",
 }
 
-async function writeFileRecursive(filePath: string, data: string) {
+const writeFileRecursive = async (filePath: string, data: string) => {
   const dir = path.dirname(filePath) // Extract the directory path
 
   try {
